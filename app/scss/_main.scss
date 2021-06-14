@@ -1,0 +1,13 @@
+.main{
+    &__section{
+        &__text{
+            margin-left: 1.875rem;
+            margin-right: 1.875rem;
+            text-align: center;
+        }
+        
+        img{
+            width: 100%;
+        }
+    }
+}

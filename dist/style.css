@@ -68,8 +68,8 @@ body {
 }
 
 .header__image .image-orange img {
-  z-index: 0;
   width: 100%;
+  vertical-align: top;
 }
 
 .header__image .arrow img {
@@ -81,5 +81,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   height: 7.125rem;
+}
+
+.main__section__text {
+  margin-left: 1.875rem;
+  margin-right: 1.875rem;
+  text-align: center;
+}
+
+.main__section img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
