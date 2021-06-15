@@ -10,32 +10,14 @@
         }
 
         &__text{
-            margin-left: 30px;
-            margin-right: 30px;
+            margin-left: 25px;
+            margin-right: 25px;
             text-align: center;
 
-            .title{
-                padding-top: 4.5rem;
-                padding-bottom: 1.875rem;
-                font-family: Fraunces, sans-serif;
-                font-size: 32px;
-                font-weight: 900;
-    
 
-            }
             .description{
                 padding-bottom: 2.625rem;
-                font-size: 17px;
-                line-height: 1.6;
-                color: $DarkGrayishBlue;
-
-
             }
-            // .description::after{
-            //     content: "";
-            //     display: inline-block;
-            //     width: 100%;
-            // }
 
             .learn-more{
                 display: inline-flex;

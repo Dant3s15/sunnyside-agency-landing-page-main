@@ -18,6 +18,20 @@ body {
   font-size: 1.125rem;
 }
 
+.title {
+  padding-top: 4.5rem;
+  padding-bottom: 1.875rem;
+  font-family: Fraunces, sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #818498;
+}
+
 .header {
   z-index: 5;
   width: 100%;
@@ -97,24 +111,13 @@ body {
 }
 
 .main__section__text {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
   text-align: center;
-}
-
-.main__section__text .title {
-  padding-top: 4.5rem;
-  padding-bottom: 1.875rem;
-  font-family: Fraunces, sans-serif;
-  font-size: 32px;
-  font-weight: 900;
 }
 
 .main__section__text .description {
   padding-bottom: 2.625rem;
-  font-size: 17px;
-  line-height: 1.6;
-  color: #818498;
 }
 
 .main__section__text .learn-more {
@@ -153,5 +156,43 @@ body {
   background: #fe7867;
   border-radius: 10px;
   opacity: 0.3;
+}
+
+.figure {
+  overflow: hidden;
+  margin: 0;
+}
+
+.figure__image {
+  position: relative;
+}
+
+.figure__image img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.figure__text {
+  display: inline;
+  position: absolute;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 55px;
+}
+
+.figure__text .description {
+  font-size: 15px;
+}
+
+.figure__text #graphic {
+  color: #25564b;
+}
+
+.figure__text #photography {
+  color: #23303e;
 }
 /*# sourceMappingURL=style.css.map */
