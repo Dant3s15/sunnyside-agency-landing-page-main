@@ -133,9 +133,14 @@ body {
           align-items: center;
   position: relative;
   padding-bottom: 4.5rem;
-  font-family: Fraunces, sans-serif;
+  font-family: 'Fraunces', sans-serif;
   text-transform: uppercase;
   font-weight: 900;
+}
+
+.main__section__text .learn-more a {
+  text-decoration: none;
+  color: black;
 }
 
 .main__section__text .learn-more .underline1 {
@@ -194,5 +199,113 @@ body {
 
 .figure__text #photography {
   color: #23303e;
+}
+
+.testimonials {
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.testimonials__title {
+  padding-bottom: 70px;
+  font-family: 'Fraunces', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 900;
+  color: #a7abae;
+}
+
+.testimonials .testimonial__photo {
+  padding-bottom: 35px;
+}
+
+.testimonials .testimonial__photo img {
+  border-radius: 50%;
+}
+
+.testimonials .testimonial__comment {
+  padding-bottom: 35px;
+  color: #5a636c;
+  line-height: 1.8;
+}
+
+.testimonials .testimonial__name {
+  padding-bottom: 12px;
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 900;
+}
+
+.testimonials .testimonial__working-as {
+  padding-bottom: 70px;
+  color: #a7abae;
+  font-size: 16px;
+}
+
+footer .colage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+footer .colage img {
+  width: 50%;
+}
+
+footer .bottom {
+  background-color: #90d4c5;
+}
+
+footer .bottom__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 3.75rem;
+  padding-bottom: 3.125rem;
+}
+
+footer .bottom__logo img {
+  width: 50%;
+}
+
+footer .bottom .footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 16px;
+  padding-bottom: 5.625rem;
+}
+
+footer .bottom .footer-menu a {
+  color: #458c7e;
+  text-decoration: none;
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 3.75rem;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+footer .social :not(:last-child) {
+  padding-right: 30px;
 }
 /*# sourceMappingURL=style.css.map */

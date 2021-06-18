@@ -1,0 +1,48 @@
+footer{
+    .colage{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        img{
+            width: 50%;
+        }
+    }
+
+    .bottom{
+        background-color: rgb(144, 212, 197);;
+        &__logo{
+            display: flex;
+            justify-content: center;
+            padding-top: 3.75rem;
+            padding-bottom: 3.125rem;
+          
+            img{
+                width: 50%;
+            }
+        }
+        .footer-menu{
+            display: flex;
+            justify-content: space-around;
+            font-size: 16px;
+            padding-bottom: 5.625rem;
+            a{
+                color: $DarkModerateCyan;
+                text-decoration: none;
+            }
+            
+        }
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3.75rem;
+        padding-left: 48px;
+        padding-right: 48px;
+        :not(:last-child)
+        {
+            padding-right: 30px;
+        }
+
+    }
+}
