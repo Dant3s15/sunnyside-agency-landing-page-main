@@ -1,22 +1,47 @@
 .main{
     &__section{
         overflow:hidden;
+
         &__image{
+            order: 2;
+
             width: 100%;
             img{
                 width: 100%;
                 vertical-align: top;
             }
         }
+        &__image2{
+            // order: 1;
+
+            width: 100%;
+            
+            img{
+                width: 100%;
+                min-width: 100%;
+                vertical-align: top;
+            }
+        }
 
         &__text{
+            padding-top: 4.5rem;
+            padding-bottom: 4.5rem;
             margin-left: 25px;
             margin-right: 25px;
+       
             text-align: center;
-
+      
+            @media (min-width: 769px){
+                text-align: start;
+                margin-top: 15%;
+                margin-left: 20%;
+                margin-right: 20%;
+                
+            }
 
             .description{
                 padding-bottom: 2.625rem;
+                
             }
 
             .learn-more{
@@ -24,7 +49,7 @@
                 flex-direction: column;
                 align-items: center;
                 position: relative;
-                padding-bottom: 4.5rem;
+                // padding-bottom: 4.5rem;
                 font-family: 'Fraunces', sans-serif;
                 text-transform: uppercase;
                 font-weight: 900;
@@ -35,27 +60,33 @@
                
 
         
-                .underline1{
+                    .underline1{
+                            position: relative;
+                            width: 110%;
+                            height: 10px;
+                            top: -8px;
+                            background: $Yellow;
+                            border-radius: 10px;
+                            opacity: 0.3;
+                    }
+                    .underline2{
                         position: relative;
                         width: 110%;
                         height: 10px;
                         top: -8px;
-                        background: $Yellow;
+                        background: $SoftRed;
                         border-radius: 10px;
                         opacity: 0.3;
                 }
-                .underline2{
-                    position: relative;
-                    width: 110%;
-                    height: 10px;
-                    top: -8px;
-                    background: $SoftRed;
-                    border-radius: 10px;
-                    opacity: 0.3;
-            }
                 
             }
 
+        }
+        @media (min-width: 769px){
+            display: grid;
+           
+            grid-template-columns: 50% 50%;
+            
         }
 
     }

@@ -15,11 +15,15 @@ body{
     font-size: 1.125rem;
 }
 .title{
-    padding-top: 4.5rem;
+    // padding-top: 4.5rem;
     padding-bottom: 1.875rem;
     font-family: Fraunces, sans-serif;
     font-size: 32px;
     font-weight: 900;
+    // @media (min-width: 769px){
+      
+    //     font-size: 50px;
+    // }
 
 
 }
@@ -29,5 +33,18 @@ body{
     line-height: 1.6;
     color: $DarkGrayishBlue;
 
+
+}
+@media (min-width: 769px){
+
+    .mobile{
+        display: none;
+    }
+    
+}
+@media (max-width: 769px){
+    .desktop{
+        display: none;
+    }
 
 }

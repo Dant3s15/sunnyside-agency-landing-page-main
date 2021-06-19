@@ -29,10 +29,25 @@
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
+      <div class="nav">
+        <div class="item">About</div>
+        <div class="item">Services</div>
+        <div class="item">Projects</div>
+        <div class="item contact">Contact</div>
+      </div>
+      <div class="nav-mobile">
+        <div class="item"><a href="#">About</a></div>
+        <div class="item"><a href="#">Services</a></div>
+        <div class="item"><a href="#">Projects</a></div>
+        <div class="item" id="contact"><a href="#">Contact</a></div>
+      </div>
     </div>
     <div class="header__image">
-      <div class="image-orange">
+      <div class="image-orange-mobile">
               <img src="/images/mobile/image-header.jpg" alt="">
+      </div>
+      <div class="image-orange-desktop">
+              <img src="/images/desktop/image-header.jpg" alt="">
       </div>
       <h1>We are creatives</h1>
       <div class="arrow">
@@ -55,46 +70,53 @@
       </div>
     </section>
     <section class="main__section">
-      <div class="main__section__image">
+      <div class="main__section__image2">
         <img src="/images/mobile/image-stand-out.jpg" alt="">
       </div>
       <div class="main__section__text">
         <div class="title">Stand out to the right audience</div>
         <div class="description">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
         </div>
-        <div class="learn-more">Learn more<div class="underline2"></div></div>
+        <div class="learn-more"><a href="#">Learn more</a> <div class="underline2"></div></div>
 
       </div>
     </section>
   </main>
-  <figure class="figure">
-    <div class="figure__image">
-      <img src="/images/mobile/image-graphic-design.jpg" alt="">
-      <div class="figure__text">
-        <div class="title" id="graphic">
-          Graphic design
-        </div>
-        <div class="description" id="graphic">
-          Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-        </div>
-      </div>
-    </div>
-  </figure>
-  <figure class="figure">
-    <div class="figure__image">
-      <img src="/images/mobile/image-photography.jpg" alt="">
-      <div class="figure__text">
-        <div class="title" id="photgraphy">
-          Photography
-        </div>
-        <div class="description" id="photography">
-          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+
+  <div class="figures">
+    <figure class="figure">
+      <div class="figure__image">
+        <img class="mobile" src="/images/mobile/image-graphic-design.jpg" alt="">
+        <img class="desktop" src="/images/desktop/image-graphic-design.jpg" alt="">
+        
+        <div class="figure__text">
+          <div class="title" id="graphic">
+            Graphic design
+          </div>
+          <div class="description" id="graphic">
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+          </div>
         </div>
       </div>
-    </div>
-  </figure>
+    </figure>
+    <figure class="figure">
+      <div class="figure__image">
+        <img class="mobile" src="/images/mobile/image-photography.jpg" alt="">
+        <img  class="desktop" src="/images/desktop/image-photography.jpg" alt="">
+        <div class="figure__text">
+          <div class="title" id="photgraphy">
+            Photography
+          </div>
+          <div class="description" id="photography">
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div class="testimonials__title">Client testimonials</div>
   <div class="testimonials">
-    <div class="testimonials__title">Client testimonials</div>
+    
     <div class="testimonial">
       <div class="testimonial__photo"><img src="/images/image-emily.jpg" alt=""></div>
       <div class="testimonial__comment">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
@@ -122,10 +144,14 @@
   </div>
 <footer>
   <div class="colage">
-    <img src="/images/mobile/image-gallery-milkbottles.jpg" alt="">
-    <img src="/images/mobile/image-gallery-orange.jpg" alt="">
-    <img src="/images/mobile/image-gallery-cone.jpg" alt="">
-    <img src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+    <img class="mobile" src="/images/mobile/image-gallery-milkbottles.jpg" alt="">
+    <img class="desktop" src="/images/desktop/image-gallery-milkbottles.jpg" alt="">
+    <img class="mobile" src="/images/mobile/image-gallery-orange.jpg" alt="">
+    <img class="desktop" src="/images/desktop/image-gallery-orange.jpg" alt="">
+    <img class="mobile" src="/images/mobile/image-gallery-cone.jpg" alt="">
+    <img class="desktop" src="/images/desktop/image-gallery-cone.jpg" alt="">
+    <img class="mobile" src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+    <img class="desktop" src="/images/desktop/image-gallery-sugarcubes.jpg" alt="">
   </div>
   <div class="bottom">
     <div class="bottom__logo"><img src="/images/logo2.svg" alt=""></div>
@@ -151,12 +177,8 @@
   </div>
 
 </footer>
-  
 
-  About
-  Services
-  Projects
-  Contact
+
 
 
 
