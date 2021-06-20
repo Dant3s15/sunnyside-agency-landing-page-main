@@ -60,7 +60,13 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding: 34px 24px 34px 24px;
+  padding: 56px 48px 34px 24px;
+}
+
+@media (max-width: 769px) {
+  .header__top-bar {
+    padding: 34px 24px 34px 24px;
+  }
 }
 
 .header__top-bar .top-bar__logo {
@@ -87,11 +93,17 @@ body {
   }
 }
 
-.header__top-bar .hamburger .bar1, .header__top-bar .hamburger .bar2, .header__top-bar .hamburger .bar3 {
+.header__top-bar .hamburger .bar2, .header__top-bar .hamburger .bar3 {
   width: 1.5rem;
   height: 2px;
   background-color: white;
   margin: 6px 0;
+}
+
+.header__top-bar .hamburger .bar1 {
+  width: 1.5rem;
+  height: 2px;
+  background-color: white;
 }
 
 .header__top-bar .nav {
@@ -115,13 +127,18 @@ body {
   margin: 0 15px;
 }
 
+.header__top-bar .nav .item a {
+  text-decoration: none;
+  color: white;
+}
+
 @media (max-width: 769px) {
   .header__top-bar .nav {
     display: none;
   }
 }
 
-.header__top-bar .nav .contact {
+.header__top-bar .nav #contact a {
   font-family: 'Fraunces', serif;
   text-transform: uppercase;
   color: black;
@@ -146,8 +163,8 @@ body {
           align-items: center;
   position: absolute;
   top: 0;
-  right: 5%;
-  left: 5%;
+  right: 24px;
+  left: 24px;
   height: 305px;
   margin-top: 105px;
   background-color: white;
@@ -176,6 +193,18 @@ body {
   color: black;
 }
 
+.header__top-bar .nav-mobile::before {
+  top: -24px;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  border-width: 0 0 25px 25px;
+  border-color: transparent transparent #ffffff transparent;
+}
+
 .header__image h1 {
   top: 7.1875rem;
   width: 100%;
@@ -184,7 +213,7 @@ body {
   font-family: Fraunces, sans-serif;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 30px;
   letter-spacing: 10px;
   color: white;
   padding: 0 5%;
