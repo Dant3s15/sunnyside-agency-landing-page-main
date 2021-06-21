@@ -11,6 +11,7 @@
         justify-content: space-between;
         width: 100%;
         padding: 56px 48px 34px 24px;
+        transition: all 1s ease-in-out;
         @media (max-width: 769px){
             padding: 34px 24px 34px 24px;
         }
@@ -24,12 +25,12 @@
         }
 
         .hamburger{
-            
             @media (min-width: 770px){
                 display: none;
             }
             width: 1.5rem ;
             height: 1.125rem;
+
  
             .bar2, .bar3{
                 
@@ -77,6 +78,11 @@
                     background-color: $White;
                     padding: 15px 25px;
                     border-radius: 50px;
+                    transition: 0.3s;
+                }
+                a:hover{
+                    color: $White;
+                    background-color: rgba(255, 255, 255, 0.4);
                 }
     
 
@@ -95,9 +101,9 @@
             height: 305px;
             margin-top:105px;
             background-color: $White;
+            animation-name: fade-in;
+            animation-duration: 0.3s;
             
-            // border:solid  red 2px;
-
     
             .item{ 
                 position: relative;
@@ -112,14 +118,8 @@
                     text-decoration: none;
                     color: $DarkGrayishBlue;  
                 }
-
-
-
             }
             #contact{
-
-
-
                 a{
                     font-family: 'Fraunces', serif;
                     text-transform: uppercase;
@@ -128,9 +128,10 @@
                     padding: 15px 25px;
                     border-radius: 50px;
                     color: black;
-                }
-            }
 
+                }
+
+            }
 
         }
         .nav-mobile::before{
@@ -162,6 +163,7 @@
             letter-spacing: 10px;
             color: $White;
             padding: 0 5%;
+            transition: all 1s ease-in-out;
             @media (min-width: 600px){
                 font-size: 42px;
             }
@@ -192,19 +194,21 @@
             img{
                 z-index: 3;
                 position:absolute;
-                // top: 290px;
                 left: 0;
                 right: 0;
                 margin-left: auto;
                 margin-right: auto;
            
                 margin-bottom: 35%;
-                height: 7.125rem;
+                height: 15%;
                 align-self: flex-end;
-
-                @media (min-width: 769px){
+                transition: all 1s ease-in-out;
+                @media (min-width: $tablet){
                     height: 15%;
-                    // top: 450px;
+                    margin-bottom: 10%;
+                }
+                @media (min-width: $laptop){
+                    height: 15%;
                     margin-bottom: 20%;
                 }
 

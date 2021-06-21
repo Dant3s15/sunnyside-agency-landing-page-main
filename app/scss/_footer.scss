@@ -1,4 +1,5 @@
 footer{
+
     .colage{
         display: flex;
         flex-wrap: wrap;
@@ -31,6 +32,10 @@ footer{
             a{
                 color: $DarkModerateCyan;
                 text-decoration: none;
+                transition: all 0.3s;
+            }
+            a:hover{
+                color: $White;
             }
             @media (min-width:769px){
                 justify-content: center;
@@ -53,6 +58,16 @@ footer{
         {
             padding-right: 30px;
         }
+        a{
+            svg{
+                fill: #2C7566;
+                transition: 0.3s;
+            }
+            svg:hover{
+                fill: $White;
+            }
+        }
 
     }
+    
 }
