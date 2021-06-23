@@ -37,7 +37,7 @@ footer{
             a:hover{
                 color: $White;
             }
-            @media (min-width:769px){
+            @media (min-width:$tablet){
                 justify-content: center;
                 :not(:last-child){
                     padding-right: 40px;

@@ -636,7 +636,7 @@ footer .bottom .footer-menu a:hover {
   color: white;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   footer .bottom .footer-menu {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
