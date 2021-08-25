@@ -1,6 +1,5 @@
 const hamburger = document.querySelector('#hamburger');
 const nav = document.querySelector('#nav');
-// const mediaQuery = window.matchMedia("(min-width: 769px)");
 
 hamburger.addEventListener('click', function(){
 
