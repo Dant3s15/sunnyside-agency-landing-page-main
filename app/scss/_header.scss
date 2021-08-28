@@ -2,7 +2,6 @@
     z-index: 5;
     width: 100%;
     height: 100%;
-
     &__top-bar{
         z-index: 5;
         background-color: transparent;
@@ -46,6 +45,9 @@
                 height: 2px;
                 background-color: white;
             }
+        }
+        .hmbopened{ 
+            opacity: 0.5;
         }
 
         .nav{

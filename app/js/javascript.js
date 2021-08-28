@@ -1,18 +1,22 @@
 const hamburger = document.querySelector('#hamburger');
 const nav = document.querySelector('#nav');
 
-hamburger.addEventListener('click', function(){
+let ifClicked = () => {
 
-    if (nav.classList.contains('nav-mobile')){
+    nav.classList.contains('nav-mobile') 
+    ? (nav.classList.remove('nav-mobile'), nav.classList.add('nav'),hamburger.classList.remove('hmbopened')) 
+    : (nav.classList.add('nav-mobile'), nav.classList.remove('nav'),hamburger.classList.add('hmbopened'));
+    
+};
 
-        nav.classList.remove('nav-mobile')
-        nav.classList.add('nav')
-        console.log('test')
+let ifScreenNotMobile = () => {
+    if (window.innerWidth > 768){
+        nav.classList.contains('nav-mobile');
+        nav.classList.remove('nav-mobile');
+        nav.classList.add('nav');
+        hamburger.classList.remove('hmbopened');
     }
-    else{
+}
 
-        nav.classList.add('nav-mobile')
-        nav.classList.remove('nav')
-
-    }
-})
+window.addEventListener('resize', ifScreenNotMobile);
+hamburger.addEventListener('click', ifClicked);

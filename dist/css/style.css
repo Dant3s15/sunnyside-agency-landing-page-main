@@ -120,6 +120,10 @@ body {
   background-color: white;
 }
 
+.header__top-bar .hmbopened {
+  opacity: 0.5;
+}
+
 .header__top-bar .nav {
   width: 30%;
   display: -webkit-box;
@@ -711,4 +715,3 @@ footer .social a svg:hover {
     opacity: 0;
   }
 }
-/*# sourceMappingURL=style.css.map */
