@@ -6,6 +6,11 @@ html{
 *, *::before, *::after{
     box-sizing: inherit;
 }
+h1,h2,h3,p{
+    padding: 0;
+    margin: 0;
+}
+
 body{
     font-family: 'Fraunces', serif;//weight 700 900
     font-family: 'Barlow', sans-serif;//weight 600
@@ -18,7 +23,7 @@ body{
     // padding-top: 4.5rem;
     padding-bottom: 10%;
     font-family: Fraunces, sans-serif;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 900;
     @media (min-width: $tablet){
       
