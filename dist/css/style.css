@@ -547,11 +547,11 @@ body {
   font-size: 15px;
 }
 
-.figures .figure__text #graphic {
+.figures .figure__text .graphic {
   color: #25564b;
 }
 
-.figures .figure__text #photography {
+.figures .figure__text .photography {
   color: #23303e;
 }
 
