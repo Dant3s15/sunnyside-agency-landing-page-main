@@ -9,6 +9,11 @@ html {
           box-sizing: inherit;
 }
 
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: 'Fraunces', serif;
   font-family: 'Barlow', sans-serif;
@@ -21,7 +26,7 @@ body {
 .title {
   padding-bottom: 10%;
   font-family: Fraunces, sans-serif;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 900;
 }
 
@@ -148,6 +153,15 @@ body {
 .header__top-bar .nav .item a {
   text-decoration: none;
   color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header__top-bar .nav .item a:hover, .header__top-bar .nav .item a:focus {
+  border: 3px solid #fad400;
+  border-radius: 50px;
+  padding: 15px 25px;
+  outline: none;
 }
 
 @media (max-width: 769px) {
@@ -167,9 +181,11 @@ body {
   transition: 0.3s;
 }
 
-.header__top-bar .nav #contact a:hover {
+.header__top-bar .nav #contact a:hover, .header__top-bar .nav #contact a:focus {
   color: white;
   background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  outline: none;
 }
 
 .header__top-bar .nav-mobile {
@@ -213,13 +229,24 @@ body {
   color: #818498;
 }
 
+.header__top-bar .nav-mobile .item a:hover, .header__top-bar .nav-mobile .item a:focus {
+  border: 2px solid #fad400;
+  border-radius: 50px;
+  outline: none;
+}
+
 .header__top-bar .nav-mobile #contact a {
   font-family: 'Fraunces', serif;
   text-transform: uppercase;
   background-color: #fad400;
-  padding: 15px 25px;
   border-radius: 50px;
   color: black;
+}
+
+.header__top-bar .nav-mobile #contact a:hover, .header__top-bar .nav-mobile #contact a:focus {
+  border: 2px solid black;
+  border-radius: 50px;
+  outline: none;
 }
 
 .header__top-bar .nav-mobile::before {
@@ -250,9 +277,17 @@ body {
   transition: all 1s ease-in-out;
 }
 
+@media (min-width: 400px) {
+  .header__image h1 {
+    font-size: 40px;
+    top: 20%;
+  }
+}
+
 @media (min-width: 600px) {
   .header__image h1 {
-    font-size: 42px;
+    font-size: 60px;
+    top: 20%;
   }
 }
 
@@ -364,7 +399,7 @@ body {
 
 @media (min-width: 1200px) {
   .main__section .flex {
-    padding: 17%;
+    padding: 14%;
   }
 }
 
