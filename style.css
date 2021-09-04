@@ -130,7 +130,6 @@ body {
 }
 
 .header__top-bar .nav {
-  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
